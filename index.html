@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MINH NHẬT</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial,sans-serif;
+    }
+
+    body{
+      background:#f5f5f5;
+      color:#111;
+      line-height:1.6;
+    }
+
+    header{
+      background:#111827;
+      color:white;
+      padding:20px;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    nav h1{
+      font-size:28px;
+    }
+
+    nav ul{
+      display:flex;
+      gap:20px;
+      list-style:none;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+    }
+
+    .hero{
+      padding:80px 20px;
+      text-align:center;
+      background:white;
+      animation:fadeIn 1s ease;
+    }
+
+    .hero img{
+      width:140px;
+      border-radius:50%;
+      margin-bottom:20px;
+      border:4px solid #111827;
+    }
+
+    .hero h2{
+      font-size:42px;
+      margin-bottom:10px;
+    }
+
+    .hero p{
+      color:#555;
+      max-width:800px;
+      margin:auto;
+    }
+
+    .btns{
+      margin-top:25px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 24px;
+      border-radius:10px;
+      margin:8px;
+      text-decoration:none;
+      color:white;
+      background:#111827;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      transform:translateY(-3px);
+    }
+
+    .section{
+      max-width:1200px;
+      margin:60px auto;
+      padding:20px;
+    }
+
+    .section h3{
+      margin-bottom:20px;
+      font-size:32px;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .card{
+      background:white;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 5px 20px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-6px);
+    }
+
+    .card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+    }
+
+    iframe{
+      width:100%;
+      border:none;
+      border-radius:20px;
+      height:400px;
+      margin-top:20px;
+    }
+
+    footer{
+      background:#111827;
+      color:white;
+      padding:40px 20px;
+      text-align:center;
+      margin-top:60px;
+    }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(30px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>MINH NHẬT</h1>
+    <ul>
+      <li><a href="#lienhe">Liên hệ</a></li>
+      <li><a href="#nhom">Nhôm</a></li>
+      <li><a href="#alu">ALU</a></li>
+      <li><a href="#sanpham">Sản phẩm</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <img src="https://i.imgur.com/YOURLOGO.png" alt="Logo">
+  <h2>CÔNG TY TNHH MINH NHẬT</h2>
+  <p>
+    NHÔM XINGFA NHẬP - VIỆT NAM <br>
+    NHÔM THANH KAL - CSC - ASIA <br>
+    PHỤ KIỆN NGÀNH NHÔM CÁC LOẠI
+  </p>
+
+  <div class="btns">
+    <a class="btn" href="https://zalo.me/0972610277" target="_blank">Chat Zalo</a>
+    <a class="btn" href="https://facebook.com" target="_blank">Facebook</a>
+  </div>
+</section>
+
+<section class="section" id="lienhe">
+  <h3>Thông tin liên hệ</h3>
+
+  <p><strong>Địa chỉ:</strong> 21C Vũ Bảo, Quy Nhơn</p>
+  <p><strong>SĐT:</strong> 0972610277</p>
+  <p><strong>Email:</strong> nhomminhnhat@gmail.com</p>
+
+  <iframe
+    src="https://www.google.com/maps?q=21C%20Vũ%20Bảo%20Quy%20Nhơn&output=embed">
+  </iframe>
+</section>
+
+<section class="section" id="nhom">
+  <h3>Ứng dụng nhôm</h3>
+
+  <div class="cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop">
+      <div class="card-content">
+        <h4>Cửa nhôm kính</h4>
+        <p>Sử dụng cho nhà ở, showroom, văn phòng hiện đại.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop">
+      <div class="card-content">
+        <h4>Vách ngăn</h4>
+        <p>Thi công vách nhôm kính cao cấp.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="alu">
+  <h3>Ứng dụng ALU</h3>
+
+  <div class="cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop">
+      <div class="card-content">
+        <h4>Ốp mặt tiền</h4>
+        <p>Tạo vẻ hiện đại cho công trình.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1200&auto=format&fit=crop">
+      <div class="card-content">
+        <h4>Bảng hiệu quảng cáo</h4>
+        <p>Ứng dụng ALU cho bảng hiệu chuyên nghiệp.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="sanpham">
+  <h3>Sản phẩm</h3>
+
+  <div class="cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop">
+      <div class="card-content">
+        <h4>Nhôm nhập khẩu</h4>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop">
+      <div class="card-content">
+        <h4>ALU</h4>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1200&auto=format&fit=crop">
+      <div class="card-content">
+        <h4>Phụ kiện ngành nhôm</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <h3>MINH NHẬT</h3>
+  <p>Chuyên nhôm - alu - phụ kiện ngành nhôm.</p>
+</footer>
+
+</body>
+</html>
